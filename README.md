@@ -2,6 +2,8 @@
 
 YouTube - https://youtu.be/EX9xcyuSX-U
 
+Instructables - Step by stepguide - https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/
+
 Instruments:
 
     DUB SIREN - Classic reggae/dub sounds with 6 modes
