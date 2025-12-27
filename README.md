@@ -1,4 +1,5 @@
-![LDBN1683](https://github.com/user-attachments/assets/080774bd-16a2-4954-9641-e700f59e0e93)
+![YJPQ4857](https://github.com/user-attachments/assets/238fe3b8-64d0-45a7-8392-5b8dcfc98ec9)
+
 
 
 Instruments:
