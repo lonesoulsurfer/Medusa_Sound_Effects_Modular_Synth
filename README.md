@@ -6,19 +6,19 @@ Instructables - Step by step guide - https://www.instructables.com/Medusa-a-Soun
 
 4 Main Knobs:
 
-  Pot 1 (Pitch) - Controls the base frequency/note
-  Pot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)
-  Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)
-  Pot 4 (Echo Feedback) - Controls how much echo/delay repeats
+    Pot 1 (Pitch) - Controls the base frequency/note
+    Pot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)
+    Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)
+    Pot 4 (Echo Feedback) - Controls how much echo/delay repeats
 
 Main Buttons:
-  TRIGGER - Hold to play sound
-  MENU - Cycles through 4 instruments (Dub Siren → Ray Gun → Lead Synth → Disco)
-  MODE - Changes the sound variation within each instrument
-  DELAY - Cycles delay time (OFF → 50ms → 100ms → 175ms → 250ms → 375ms)
-  GATE - Changes gate length (how long notes are)
-  OCTAVE - Shifts pitch up/down by octaves
-  MUTATE - Cycles mutation modes (makes sound evolve randomly on each sync in trigger)
+    TRIGGER - Hold to play sound
+    MENU - Cycles through 4 instruments (Dub Siren → Ray Gun → Lead Synth → Disco)
+    MODE - Changes the sound variation within each instrument
+    DELAY - Cycles delay time (OFF → 50ms → 100ms → 175ms → 250ms → 375ms)
+    GATE - Changes gate length (how long notes are)
+    OCTAVE - Shifts pitch up/down by octaves
+    MUTATE - Cycles mutation modes (makes sound evolve randomly on each sync in trigger)
 
 More details on the Mutate Function:
   Mutate works only with pitch and is controled by the pitch knob
