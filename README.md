@@ -6,13 +6,13 @@ Instructables - Step by step guide - https://www.instructables.com/Medusa-a-Soun
 
 4 Main Knobs:
 
-    Pot 1 (Pitch) - Controls the base frequency/note
+         Pot 1 (Pitch) - Controls the base frequency/note
     
-    Pot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)
+         Pot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)
 
-    Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)
+         Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)
     
-    Pot 4 (Echo Feedback) - Controls how much echo/delay repeats
+         Pot 4 (Echo Feedback) - Controls how much echo/delay repeats
 
 Main Buttons:
     TRIGGER - Hold to play sound
