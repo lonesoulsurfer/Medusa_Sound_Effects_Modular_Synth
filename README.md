@@ -15,23 +15,40 @@ Instructables - Step by step guide - https://www.instructables.com/Medusa-a-Soun
          Pot 4 (Echo Feedback) - Controls how much echo/delay repeats
 
 Main Buttons:
-    TRIGGER - Hold to play sound
-    MENU - Cycles through 4 instruments (Dub Siren → Ray Gun → Lead Synth → Disco)
-    MODE - Changes the sound variation within each instrument
-    DELAY - Cycles delay time (OFF → 50ms → 100ms → 175ms → 250ms → 375ms)
-    GATE - Changes gate length (how long notes are)
-    OCTAVE - Shifts pitch up/down by octaves
-    MUTATE - Cycles mutation modes (makes sound evolve randomly on each sync in trigger)
+
+          TRIGGER - Hold to play sound
+          
+          MENU - Cycles through 4 instruments (Dub Siren → Ray Gun → Lead Synth → Disco)
+          
+          MODE - Changes the sound variation within each instrument
+          
+         DELAY - Cycles delay time (OFF → 50ms → 100ms → 175ms → 250ms → 375ms)
+         
+          GATE - Changes gate length (how long notes are)
+          
+          OCTAVE - Shifts pitch up/down by octaves
+          
+          MUTATE - Cycles mutation modes (makes sound evolve randomly on each sync in trigger)
+
 
 More details on the Mutate Function:
-  Mutate works only with pitch and is controled by the pitch knob
-  It will also only work with a sync in
-  There are 3 sub menus
-  Mutation Probability (0-100%)
-  Rhythm - controls musical Scale Selection Cycles through: MIN PENT → MAJOR → BLUES → MINOR
-  Cutoff - Filter Cutoff (200-4000Hz)
-  Mutate can be turned off by double tapping the mutate button and turned back on by tapping the mutate button
-  Each function once set, is locked into place.
+
+           Mutate works only with pitch and is controled by the pitch knob
+           
+           It will also only work with a sync in
+
+           
+           There are 3 sub menus
+           
+           Mutation Probability (0-100%)
+           
+           Rhythm - controls musical Scale Selection Cycles through: MIN PENT → MAJOR → BLUES → MINOR
+
+           Cutoff - Filter Cutoff (200-4000Hz)
+
+
+           Mutate can be turned off by double tapping the mutate button and turned back on by tapping the mutate button
+           Each function once set, is locked into place.
 
 8 Keyboard Keys:
 Press keys 1-8 to play different notes in a musical scale
