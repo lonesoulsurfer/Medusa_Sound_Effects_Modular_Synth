@@ -5,6 +5,7 @@ YouTube - https://youtu.be/EX9xcyuSX-U
 Instructables - Step by step guide - https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/
 
 4 Main Knobs:
+
 Pot 1 (Pitch) - Controls the base frequency/note
 Pot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)
 Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)
