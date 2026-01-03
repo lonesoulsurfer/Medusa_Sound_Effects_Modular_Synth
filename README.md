@@ -40,73 +40,133 @@ More details on the Mutate Function:
            
            There are 3 sub menus
            
-           Mutation Probability (0-100%)
+          1.  Mutation Probability (0-100%)
            
-           Rhythm - controls musical Scale Selection Cycles through: MIN PENT → MAJOR → BLUES → MINOR
+          2.  Rhythm - controls musical Scale Selection Cycles through: MIN PENT → MAJOR → BLUES → MINOR
 
-           Cutoff - Filter Cutoff (200-4000Hz)
+          3.  Cutoff - Filter Cutoff (200-4000Hz)
 
 
            Mutate can be turned off by double tapping the mutate button and turned back on by tapping the mutate button
            Each function once set, is locked into place.
 
+
 8 Keyboard Keys:
-Press keys 1-8 to play different notes in a musical scale
-Works like a mini keyboard - each key plays a specific pitch
-Also activates the special features
+
+         Press keys 1-8 to play different notes in a musical scale
+
+         Works like a mini keyboard - each key plays a specific pitch
+
+         Also activates the special features
+         
 
 Instrument Guide
-1. DUB SIREN (Classic reggae/dub swoops)
-What each pot does:
-Pot 1 (PITCH) - Base frequency (50-2000Hz) - turn to change the note
-Pot 2 (SPEED) - LFO speed (0.1-20Hz) - how fast the sound wobbles
-Pot 3 (MOD) - Modulation depth (0-100%) - how much the pitch sweeps
-Pot 4 (Echo Feedback) - Echo repeats (0-95%) - for dub delays
+
+
+ 1. DUB SIREN (Classic reggae/dub swoops)
+
+        
+         What each pot does:
+         
+         Pot 1 (PITCH) - Base frequency (50-2000Hz) - turn to change the note
+
+         Pot 2 (SPEED) - LFO speed (0.1-20Hz) - how fast the sound wobbles
+
+         Pot 3 (MOD) - Modulation depth (0-100%) - how much the pitch sweeps
+
+         Pot 4 (Echo Feedback) - Echo repeats (0-95%) - for dub delays
+
+
 6 Modes (press MODE button):
-CLASSIC DUB - Smooth sawtooth wobble
-DEEP SUB - Adds sub-bass octave (Pot 3 controls sub mix)
-SQUARE WAVE - Hollow, aggressive tone
-LO-FI CRUSH - Bit crusher effect (Pot 3 controls bit depth 1-8)
-RING MOD - Metallic ring modulation (Pot 3 controls ring mod frequency)
-PORTAMENTO - Smooth pitch glide (Pot 2 controls glide time)
+
+         CLASSIC DUB - Smooth sawtooth wobble
+         
+         DEEP SUB - Adds sub-bass octave (Pot 3 controls sub mix)
+         
+         SQUARE WAVE - Hollow, aggressive tone
+         
+         LO-FI CRUSH - Bit crusher effect (Pot 3 controls bit depth 1-8)
+         
+         RING MOD - Metallic ring modulation (Pot 3 controls ring mod frequency)
+         
+         PORTAMENTO - Smooth pitch glide (Pot 2 controls glide time)
+
+         
 
 2. RAY GUN (Sci-fi laser sounds)
-What each pot does:
-Pot 1 (FREQ) - Laser frequency (200-4000Hz) - pitch of the laser
-Pot 2 (SWEEP) - Sweep speed (0.1-20Hz) - how fast it swoops
-Pot 3 (RES) - Resonance (30-95%) - filter sharpness/brightness
-Pot 4 (Echo Feedback) - Echo repeats (0-95%)
-4 Modes (press MODE button):
-ZAP - Quick upward sweep (classic ray gun)
-LASER - Downward sweep with noise burst
-BLASTER - Rapid fire short bursts
-PHASER - Modulated pulse (sci-fi phaser)
+
+         What each pot does:
+
+         Pot 1 (FREQ) - Laser frequency (200-4000Hz) - pitch of the laser
+
+         Pot 2 (SWEEP) - Sweep speed (0.1-20Hz) - how fast it swoops
+
+         Pot 3 (RES) - Resonance (30-95%) - filter sharpness/brightness
+
+         Pot 4 (Echo Feedback) - Echo repeats (0-95%)
+
+         4 Modes (press MODE button):
+
+         ZAP - Quick upward sweep (classic ray gun)
+
+         LASER - Downward sweep with noise burst
+
+         BLASTER - Rapid fire short bursts
+
+         PHASER - Modulated pulse (sci-fi phaser)
+
+
 
 3. LEAD SYNTH (Generative melodies)
-What each pot does:
-Pot 1 (ROOT) - Root note (200-800Hz) - base pitch of the melody
-Pot 2 (TEMPO) - Step speed (100-1000ms) - how fast notes play
-Pot 3 (VIB) - Vibrato depth (0-10%) - pitch wobble on notes
-Pot 4 (Gate) - Gate length (20-100%) - how long each note plays
-4 Modes (press MODE button):
-SEQUENCE - Plays pre-programmed melody
-ARPEGGIO - Arpeggiator with octave jumps
-EUCLIDEAN - Euclidean rhythm patterns
-GENERATIVE - Auto-generates new melodies
+
+         What each pot does:
+
+         Pot 1 (ROOT) - Root note (200-800Hz) - base pitch of the melody
+
+         Pot 2 (TEMPO) - Step speed (100-1000ms) - how fast notes play
+
+         Pot 3 (VIB) - Vibrato depth (0-10%) - pitch wobble on notes
+
+         Pot 4 (Gate) - Gate length (20-100%) - how long each note plays
+
+         4 Modes (press MODE button):
+
+         SEQUENCE - Plays pre-programmed melody
+
+         ARPEGGIO - Arpeggiator with octave jumps
+
+         EUCLIDEAN - Euclidean rhythm patterns
+
+         GENERATIVE - Auto-generates new melodies
+
+   
 
 4. DISCO (Classic disco effects)
-What each pot does:
-Pot 1 (PITCH) - Base frequency (100-2000Hz) - effect pitch
-Pot 2 (SPEED) - Effect duration/speed - how long the effect lasts
-Pot 3 (BRIGHT) - Brightness (0-100%) - filter cutoff/tone
-Pot 4 (Echo Feedback) - Echo repeats (0-95%)
-6 Modes (press MODE button):
-ORCH HIT - Punchy orchestral stab
-STRINGS - Rising string machine sweep
-FUNK BLAST - Synth brass stab with pitch bend
-WHOOSH - Noise sweep (spaceship flyby)
-BUBBLE - Percussive bubble pop sound
-LASER - Musical laser sweep with vibrato
+
+
+         What each pot does:
+
+         Pot 1 (PITCH) - Base frequency (100-2000Hz) - effect pitch
+
+         Pot 2 (SPEED) - Effect duration/speed - how long the effect lasts
+
+         Pot 3 (BRIGHT) - Brightness (0-100%) - filter cutoff/tone
+
+         Pot 4 (Echo Feedback) - Echo repeats (0-95%)
+
+         6 Modes (press MODE button):
+
+         ORCH HIT - Punchy orchestral stab
+
+         STRINGS - Rising string machine sweep
+
+         FUNK BLAST - Synth brass stab with pitch bend
+
+         WHOOSH - Noise sweep (spaceship flyby)
+
+         BUBBLE - Percussive bubble pop sound
+
+         LASER - Musical laser sweep with vibrato
 
 Special Features (Function + key buttons 1 - 8)
 Sequencer  (Function + Key 1):
