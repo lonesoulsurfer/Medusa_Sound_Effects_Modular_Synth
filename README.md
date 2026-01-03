@@ -168,54 +168,107 @@ Instrument Guide
 
          LASER - Musical laser sweep with vibrato
 
+
 Special Features (Function + key buttons 1 - 8)
+
 Sequencer  (Function + Key 1):
-Creates an 8-step programmable sequence
-Press keyboard keys to toggle steps on/off
-Hold a key to adjust that step's pitch with Pot 1
-TRIGGER starts/stops playback
+
+
+         Creates an 8-step programmable sequence
+
+         Press keyboard keys to toggle steps on/off
+
+         Hold a key to adjust that step's pitch with Pot 1
+
+         TRIGGER starts/stops playback
+
+
 Record  (Function + Key 3):
-Press Key 3 once to start recording (up to 5 seconds)
-Press Key 3 again to stop
-Press Key 3 again to play back
-Press Key 4 to toggle loop on/off
+
+         Press Key 3 once to start recording (up to 5 seconds)
+
+         Press Key 3 again to stop
+
+         Press Key 3 again to play back
+
+         Press Key 4 to toggle loop on/off
+
+
 Reverse  (Function + Key 4):
-Press Key 4 to toggle reverse effect on/off
-Pot 1 controls pitch shift
-Pot 3 controls wet/dry mix
+
+         Press Key 4 to toggle reverse effect on/off
+
+         Pot 1 controls pitch shift
+
+         Pot 3 controls wet/dry mix
+
+
 Infinite Delay (Function + Key 5):
-Press Key 5 to toggle infinite sustain on/off
-Pot 1: Feedback amount (95-100%) when hold is ON
-Pot 3: Filter cutoff
+
+         Press Key 5 to toggle infinite sustain on/off
+
+         Pot 1: Feedback amount (95-100%) when hold is ON
+
+         Pot 3: Filter cutoff
+
 
 LFO 2 (Function + Key 6)
-Secondary LFO that modulates frequency for vibrato/tremolo effects
-Pot 1: LFO 2 Rate (0.1-20 Hz)
-Pot 3: LFO 2 Depth (0-100%)
-Press Key 6 to toggle LFO 2 ON/OFF
+
+         Secondary LFO that modulates frequency for vibrato/tremolo effects
+
+         Pot 1: LFO 2 Rate (0.1-20 Hz)
+
+         Pot 3: LFO 2 Depth (0-100%)
+
+         Press Key 6 to toggle LFO 2 ON/OFF
+
 
 Drone (Function + Key 7)
-5-oscillator additive drone synthesizer with drift and detuning
-Press TRIGGER to cycle modes: OFF → KEYS → ON
-Pot 1: Root Pitch (20-400Hz)
-Pot 2: Detune Amount (0-100%) - spread between oscillators
-Pot 3: Brightness (0-100%) - timbre from dark to bright
-Pot 4: Drift Speed (0.1-5Hz) - slow LFO modulation
-Press MODE button to cycle chord voicings:
-UNISON: All oscillators at same pitch
-OCTAVE: Root + octaves
-FIFTH: Root + perfect fifth
-MAJOR: Major chord (root, major 3rd, 5th)
-MINOR: Minor chord (root, minor 3rd, 5th)
+
+         5-oscillator additive drone synthesizer with drift and detuning
+
+         Press TRIGGER to cycle modes: OFF → KEYS → ON
+         
+         Pot 1: Root Pitch (20-400Hz)
+
+         Pot 2: Detune Amount (0-100%) - spread between oscillators
+
+         Pot 3: Brightness (0-100%) - timbre from dark to bright
+
+         Pot 4: Drift Speed (0.1-5Hz) - slow LFO modulation
+
+                  Press MODE button to cycle chord voicings:
+
+                           UNISON: All oscillators at same pitch
+
+                           OCTAVE: Root + octaves
+
+                           FIFTH: Root + perfect fifth
+
+                           MAJOR: Major chord (root, major 3rd, 5th)
+
+                           MINOR: Minor chord (root, minor 3rd, 5th)
+
+
 
 Sidechain (Function + Key 8)
-Classic "pumping" sidechain compression effect
-Press Key 8 to toggle SIDECHAIN ON/OFF
-Pot 1: Ducking Depth (0-100%) - how much volume reduction
-Pot 2: Attack Time (1-50ms) - how fast it ducks
-Pot 3: Release Time (50-500ms) - how fast it returns
-Syncs with LOOP patterns or SYNC input for rhythmic pumping
-Auto-retriggering creates continuous pumping effect
+
+         Classic "pumping" sidechain compression effect
+
+         Press Key 8 to toggle SIDECHAIN ON/OFF
+
+         Pot 1: Ducking Depth (0-100%) - how much volume reduction
+
+         Pot 2: Attack Time (1-50ms) - how fast it ducks
+
+         Pot 3: Release Time (50-500ms) - how fast it returns
+
+         Syncs with LOOP patterns or SYNC input for rhythmic pumping
+
+         Auto-retriggering creates continuous pumping effect
+
+
+
 NOTE - all functions can be turned off by double tapping the Function button
 
 
