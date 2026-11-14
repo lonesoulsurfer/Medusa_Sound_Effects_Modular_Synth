@@ -1,279 +1,124 @@
-![YJPQ4857](https://github.com/user-attachments/assets/238fe3b8-64d0-45a7-8392-5b8dcfc98ec9)
+# Medusa: sound effects synth for Eurorack
 
-YouTube - https://youtu.be/EX9xcyuSX-U
+Medusa is a sound effects synth with four instruments: Dub Siren, Ray Gun, Lead Synth and Disco. It uses a Waveshare RP2040-Zero and an ST7789 colour screen. You can use it as a Eurorack module or as a standalone synth.
 
-Instructables - Step by step guide - https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/
+![Medusa](https://github.com/user-attachments/assets/238fe3b8-64d0-45a7-8392-5b8dcfc98ec9)
 
-4 Main Knobs:
+## Download the firmware
 
-         Pot 1 (Pitch) - Controls the base frequency/note
-    
-         Pot 2 (Speed) - Controls how fast things move (LFO speed, tempo, etc.)
+<p align="center">
+  <a href="https://github.com/lonesoulsurfer/Medusa_Sound_Effects_Modular_Synth/releases/latest"><img src="https://img.shields.io/badge/Download-latest%20firmware%20(.uf2)-2ea44f?style=for-the-badge" alt="Download the latest firmware" /></a>
+</p>
 
-         Pot 3 (Modulation) - Controls effect intensity (vibrato, filter, etc.)
-    
-         Pot 4 (Echo Feedback) - Controls how much echo/delay repeats
+> **Warning:** Do not use **Code → Download ZIP** to get the firmware. That ZIP has the source code only. It does not have the `.uf2` file. Get the `.uf2` file from the [latest release](https://github.com/lonesoulsurfer/Medusa_Sound_Effects_Modular_Synth/releases/latest).
 
-Main Buttons:
+## Build guide and video
 
-          TRIGGER - Hold to play sound
-          
-          MENU - Cycles through 4 instruments (Dub Siren → Ray Gun → Lead Synth → Disco)
-          
-          MODE - Changes the sound variation within each instrument
-          
-         DELAY - Cycles delay time (OFF → 50ms → 100ms → 175ms → 250ms → 375ms)
-         
-          GATE - Changes gate length (how long notes are)
-          
-          OCTAVE - Shifts pitch up/down by octaves
-          
-          MUTATE - Cycles mutation modes (makes sound evolve randomly on each sync in trigger)
+- Step-by-step build guide on Instructables: [Medusa - a Sound Effects Synth](https://www.instructables.com/Medusa-a-Sound-Effects-Synth-Eurorack-Module-or-St/)
+- Video on YouTube: [Medusa](https://youtu.be/EX9xcyuSX-U)
 
+## Features
 
-More details on the Mutate Function:
+- 4 instruments, each with 4 to 6 variations
+- 4 knobs: pitch, speed, modulation and echo feedback
+- 8 keys, to play notes as on a small keyboard
+- Delay with 5 delay times
+- Mutate: random changes to the sound on each sync trigger
+- Special functions: 8-step sequencer, 5-second recorder, reverse, infinite delay, second LFO, 5-oscillator drone and sidechain
+- Sync input
 
-           Mutate works only with pitch and is controled by the pitch knob
-           
-           It will also only work with a sync in
+The [user manual](docs/MANUAL.md) tells you how to use all the functions.
 
-           
-           There are 3 sub menus
-           
-          1.  Mutation Probability (0-100%)
-           
-          2.  Rhythm - controls musical Scale Selection Cycles through: MIN PENT → MAJOR → BLUES → MINOR
+## What you need
 
-          3.  Cutoff - Filter Cutoff (200-4000Hz)
+### Hardware
 
+- All parts are in the [parts list](Parts%20List%20Medusa.pdf).
+- The schematic is [Schematic.png](Schematic.png).
+- The Gerber files for the PCB and the front panel are in [Gerber files](Gerber%20files/). You can send them to a PCB maker.
 
-           Mutate can be turned off by double tapping the mutate button and turned back on by tapping the mutate button
-           Each function once set, is locked into place.
+### Software (only if you compile the firmware yourself)
 
+- Arduino IDE 2
+- Board package: **Raspberry Pi Pico/RP2040** by Earle Philhower
+- Libraries (install them with the Library Manager):
+  - **Adafruit GFX Library**
+  - **Adafruit ST7735 and ST7789 Library**
 
-8 Keyboard Keys:
+## Install the firmware
 
-         Press keys 1-8 to play different notes in a musical scale
+A `.uf2` file is the firmware, ready to use. You do not need the Arduino IDE to install it. You copy it to the RP2040-Zero, as you copy a file to a USB stick.
 
-         Works like a mini keyboard - each key plays a specific pitch
+### Step 1: Download the file
 
-         Also activates the special features
-         
+1. Go to the [latest release](https://github.com/lonesoulsurfer/Medusa_Sound_Effects_Modular_Synth/releases/latest).
+2. In the **Assets** list, click the `.uf2` file. Your browser downloads it.
 
-Instrument Guide
+### Step 2: Copy the file to the RP2040-Zero
 
+Use method A if you can reach the **BOOT** button on the RP2040-Zero. Use method B if the board is inside a case.
 
- 1. DUB SIREN (Classic reggae/dub swoops)
+#### Method A: with the BOOT button
 
-        
-         What each pot does:
-         
-         Pot 1 (PITCH) - Base frequency (50-2000Hz) - turn to change the note
+1. Disconnect the USB cable from Medusa.
+2. Push and hold the **BOOT** button on the RP2040-Zero.
+3. While you hold the button, connect the USB cable to your computer.
+4. Release the button. A drive with the name **RPI-RP2** opens on your computer.
+5. Drag the `.uf2` file onto the **RPI-RP2** drive.
+6. Wait about 5 seconds. The drive closes, the board restarts, and Medusa starts.
 
-         Pot 2 (SPEED) - LFO speed (0.1-20Hz) - how fast the sound wobbles
+#### Method B: without the BOOT button (Windows)
 
-         Pot 3 (MOD) - Modulation depth (0-100%) - how much the pitch sweeps
+This method uses a tool from the Arduino IDE. You must install the Arduino IDE and the **Raspberry Pi Pico/RP2040** board package first.
 
-         Pot 4 (Echo Feedback) - Echo repeats (0-95%) - for dub delays
+1. Connect Medusa to your computer with the USB cable.
+2. Close the Arduino IDE.
+3. Find the COM port of Medusa. Open **Device Manager** and look under **Ports (COM & LPT)**. An example is `COM5`.
+4. Open the folder that has the `.uf2` file in File Explorer.
+5. Click in the address bar. Type `powershell` and push **Enter**. A PowerShell window opens in that folder.
+6. Paste these lines. Change `COM5` to your COM port, and change the file name to the name of your file.
+7. Push **Enter**.
 
+```powershell
+$base = "$env:LOCALAPPDATA\Arduino15\packages\rp2040"
+$py = (Get-ChildItem "$base\tools\pqt-python3" -Recurse -Filter "python3*.exe" | Select-Object -First 1).FullName
+$tool = (Get-ChildItem "$base\hardware\rp2040" -Recurse -Filter uf2conv.py | Sort-Object FullName -Descending | Select-Object -First 1).FullName
+& $py -I $tool --serial COM5 --family RP2040 --deploy ".\Medusa_V2-v2.0.0.uf2"
+```
 
-6 Modes (press MODE button):
+8. Wait about 10 seconds. Medusa restarts with the new firmware.
 
-         CLASSIC DUB - Smooth sawtooth wobble
-         
-         DEEP SUB - Adds sub-bass octave (Pot 3 controls sub mix)
-         
-         SQUARE WAVE - Hollow, aggressive tone
-         
-         LO-FI CRUSH - Bit crusher effect (Pot 3 controls bit depth 1-8)
-         
-         RING MOD - Metallic ring modulation (Pot 3 controls ring mod frequency)
-         
-         PORTAMENTO - Smooth pitch glide (Pot 2 controls glide time)
+## Compile the firmware (for developers)
 
-         
+1. Install the software in [Software](#software-only-if-you-compile-the-firmware-yourself).
+2. Open `Arduino IDE - Medusa/Medusa_V2/Medusa_V2.ino`.
+3. In the **Tools** menu, set **Board** to **Waveshare RP2040 Zero**. Keep the other settings at their default values.
+4. Connect the RP2040-Zero.
+5. Click **Upload**.
 
-2. RAY GUN (Sci-fi laser sounds)
+## Files in this repository
 
-         What each pot does:
+| Folder or file | Contents |
+|----------------|----------|
+| `Arduino IDE - Medusa/Medusa_V2/` | Firmware |
+| `Front Panel Design/` | KiCad, SVG and DXF files for the front panel |
+| `Gerber files/` | Gerber files for the PCB and the front panel, ready to order |
+| `Parts List Medusa.pdf` | Parts list |
+| `Schematic.png` | Schematic |
+| `docs/MANUAL.md` | User manual |
+| `CHANGELOG.md` | Changes in each firmware version |
 
-         Pot 1 (FREQ) - Laser frequency (200-4000Hz) - pitch of the laser
+![Medusa module](https://github.com/user-attachments/assets/63473aa4-63ea-4bd8-871f-995da8978576)
 
-         Pot 2 (SWEEP) - Sweep speed (0.1-20Hz) - how fast it swoops
+![Medusa front](https://github.com/user-attachments/assets/11cc97fb-e715-48a2-9f7d-79626728065f)
 
-         Pot 3 (RES) - Resonance (30-95%) - filter sharpness/brightness
+## Support
 
-         Pot 4 (Echo Feedback) - Echo repeats (0-95%)
+Do you like this project? You can support my work on [GitHub Sponsors](https://github.com/sponsors/lonesoulsurfer).
 
-         4 Modes (press MODE button):
+## Licence
 
-         ZAP - Quick upward sweep (classic ray gun)
+- **Firmware** (`Arduino IDE - Medusa/`): [MIT License](LICENSE). You can use, change and sell it.
+- **Hardware** (PCB, front panel and Gerber files): [CERN Open Hardware Licence v2, Strongly Reciprocal](LICENSE-HARDWARE). You can make, change and sell boards. If you share or sell a changed design, you must also share the changed design files under the same licence.
 
-         LASER - Downward sweep with noise burst
-
-         BLASTER - Rapid fire short bursts
-
-         PHASER - Modulated pulse (sci-fi phaser)
-
-
-
-3. LEAD SYNTH (Generative melodies)
-
-         What each pot does:
-
-         Pot 1 (ROOT) - Root note (200-800Hz) - base pitch of the melody
-
-         Pot 2 (TEMPO) - Step speed (100-1000ms) - how fast notes play
-
-         Pot 3 (VIB) - Vibrato depth (0-10%) - pitch wobble on notes
-
-         Pot 4 (Gate) - Gate length (20-100%) - how long each note plays
-
-         4 Modes (press MODE button):
-
-         SEQUENCE - Plays pre-programmed melody
-
-         ARPEGGIO - Arpeggiator with octave jumps
-
-         EUCLIDEAN - Euclidean rhythm patterns
-
-         GENERATIVE - Auto-generates new melodies
-
-   
-
-4. DISCO (Classic disco effects)
-
-
-         What each pot does:
-
-         Pot 1 (PITCH) - Base frequency (100-2000Hz) - effect pitch
-
-         Pot 2 (SPEED) - Effect duration/speed - how long the effect lasts
-
-         Pot 3 (BRIGHT) - Brightness (0-100%) - filter cutoff/tone
-
-         Pot 4 (Echo Feedback) - Echo repeats (0-95%)
-
-         6 Modes (press MODE button):
-
-         ORCH HIT - Punchy orchestral stab
-
-         STRINGS - Rising string machine sweep
-
-         FUNK BLAST - Synth brass stab with pitch bend
-
-         WHOOSH - Noise sweep (spaceship flyby)
-
-         BUBBLE - Percussive bubble pop sound
-
-         LASER - Musical laser sweep with vibrato
-
-
-Special Features (Function + key buttons 1 - 8)
-
-Sequencer  (Function + Key 1):
-
-
-         Creates an 8-step programmable sequence
-
-         Press keyboard keys to toggle steps on/off
-
-         Hold a key to adjust that step's pitch with Pot 1
-
-         TRIGGER starts/stops playback
-
-
-Record  (Function + Key 3):
-
-         Press Key 3 once to start recording (up to 5 seconds)
-
-         Press Key 3 again to stop
-
-         Press Key 3 again to play back
-
-         Press Key 4 to toggle loop on/off
-
-
-Reverse  (Function + Key 4):
-
-         Press Key 4 to toggle reverse effect on/off
-
-         Pot 1 controls pitch shift
-
-         Pot 3 controls wet/dry mix
-
-
-Infinite Delay (Function + Key 5):
-
-         Press Key 5 to toggle infinite sustain on/off
-
-         Pot 1: Feedback amount (95-100%) when hold is ON
-
-         Pot 3: Filter cutoff
-
-
-LFO 2 (Function + Key 6)
-
-         Secondary LFO that modulates frequency for vibrato/tremolo effects
-
-         Pot 1: LFO 2 Rate (0.1-20 Hz)
-
-         Pot 3: LFO 2 Depth (0-100%)
-
-         Press Key 6 to toggle LFO 2 ON/OFF
-
-
-Drone (Function + Key 7)
-
-         5-oscillator additive drone synthesizer with drift and detuning
-
-         Press TRIGGER to cycle modes: OFF → KEYS → ON
-         
-         Pot 1: Root Pitch (20-400Hz)
-
-         Pot 2: Detune Amount (0-100%) - spread between oscillators
-
-         Pot 3: Brightness (0-100%) - timbre from dark to bright
-
-         Pot 4: Drift Speed (0.1-5Hz) - slow LFO modulation
-
-                  Press MODE button to cycle chord voicings:
-
-                           UNISON: All oscillators at same pitch
-
-                           OCTAVE: Root + octaves
-
-                           FIFTH: Root + perfect fifth
-
-                           MAJOR: Major chord (root, major 3rd, 5th)
-
-                           MINOR: Minor chord (root, minor 3rd, 5th)
-
-
-
-Sidechain (Function + Key 8)
-
-         Classic "pumping" sidechain compression effect
-
-         Press Key 8 to toggle SIDECHAIN ON/OFF
-
-         Pot 1: Ducking Depth (0-100%) - how much volume reduction
-
-         Pot 2: Attack Time (1-50ms) - how fast it ducks
-
-         Pot 3: Release Time (50-500ms) - how fast it returns
-
-         Syncs with LOOP patterns or SYNC input for rhythmic pumping
-
-         Auto-retriggering creates continuous pumping effect
-
-
-
-NOTE - all functions can be turned off by double tapping the Function button
-
-
-
-![EBXY7489](https://github.com/user-attachments/assets/63473aa4-63ea-4bd8-871f-995da8978576)
-
-![GSUT3404](https://github.com/user-attachments/assets/11cc97fb-e715-48a2-9f7d-79626728065f)
-
+Copyright (c) 2025 Marcus (lonesoulsurfer).
