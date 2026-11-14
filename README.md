@@ -92,7 +92,13 @@ $tool = (Get-ChildItem "$base\hardware\rp2040" -Recurse -Filter uf2conv.py | Sor
 
 1. Install the software in [Software](#software-only-if-you-compile-the-firmware-yourself).
 2. Open `Arduino IDE - Medusa/Medusa_V2/Medusa_V2.ino`.
-3. In the **Tools** menu, set **Board** to **Waveshare RP2040 Zero**. Keep the other settings at their default values.
+3. In the **Tools** menu, set these values:
+   - **Board:** Waveshare RP2040 Zero
+   - **Flash Size:** 2MB (no FS)
+   - **CPU Speed:** 200 MHz
+   - **Optimize:** Small (-Os) (standard)
+   - **USB Stack:** Pico SDK
+   - **Port:** the COM port of Medusa
 4. Connect the RP2040-Zero.
 5. Click **Upload**.
 

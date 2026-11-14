@@ -9,7 +9,7 @@ name: Build firmware
 # - On other branches, and with "Run workflow" on the Actions tab, it only
 #   makes a test build. Download it from the "Artifacts" box of the run.
 #
-# The board is the Waveshare RP2040 Zero, with the default settings.
+# The board settings are the same as the Arduino IDE settings in the README.
 
 on:
   push:
@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 env:
-  FQBN: rp2040:rp2040:waveshare_rp2040_zero
+  FQBN: rp2040:rp2040:waveshare_rp2040_zero:flash=2097152_0,freq=200,opt=Small,usbstack=picosdk,dbgport=Disabled,dbglvl=None,exceptions=Disabled,rtti=Disabled,stackprotect=Disabled,os=none,ipbtstack=ipv4only
   CORE_URL: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 
 jobs:
